@@ -4,7 +4,7 @@ NOTA: Es aconsejable añadir estos scripts al PATH para poder ejecutarlos desde 
 Modos de uso:
 NOTA: Todos los scipts se ejecutan de la misma manera.
 
-1.- Ejecución desde consola de comandos: BR.vbs <Texto a buscar> <Texto a reemplazar>
+1.- Ejecución desde consola de comandos: BR.vbs "Texto a buscar" "Texto a reemplazar"
    
 2.- Estando los scripts añadidos en el PATH, escribir en la barra de ruta del explorador* (o presionar F4) y escribir en ella BR.vbs. Se abrirá un cuadro de entrada donde     solicitará los parametros de Buscar y Reemplazar.
    
