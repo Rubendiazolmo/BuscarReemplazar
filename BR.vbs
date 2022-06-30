@@ -41,12 +41,15 @@ Set f      = ObjFSO.OpenTextFile("Archivos", 1, False)
 Do Until f.AtEndOfStream
 
   file = f.ReadLine
-  ' Reemplazo el patron buscado por el patron a reemplazar en la ruta del archivo
-
-  NombreArchivoArray = Split(file, "\")
-  NombreArchivoEncontrado = NombreArchivoArray(UBound(NombreArchivoArray))
-  NuevoNombreArchivo = Replace(NombreArchivoEncontrado, Buscar, Reemplazar)
   
+  ' Parto en subdirectorios la ruta del archivo
+  NombreArchivoArray = Split(file, "\")
+  ' Guardo última posición del array, el nombre del archivo con la extensión
+  NombreArchivoEncontrado = NombreArchivoArray(UBound(NombreArchivoArray))
+  ' Reemplazo en el nombre del archivo
+  NuevoNombreArchivo = Replace(NombreArchivoEncontrado, Buscar, Reemplazar)
+  ' Reemplazo en la ruta el nombre del archivo encontrado por el nombre con el reemplazo hecho
+  ' Así reemplazo solo en el nombre del archivo, no en el directorio.
   NuevoNombre = Replace(file, NombreArchivoEncontrado, NuevoNombreArchivo)
 
    ' Creo y relleno el Txt
