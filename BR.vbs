@@ -1,3 +1,4 @@
+' Buscar y reemplazar en nomnbres de la carpeta actual
 On error resume Next
 ' Declaración de variables.
 Dim ObjFSO, oShell, f, objFile, file
