@@ -1,3 +1,4 @@
+' Buscar y reemplazar en nombres de archivos de forma recursiva
 On error resume Next
 ' Declaración de variables.
 Dim ObjFSO, oShell, f, objFile, file
