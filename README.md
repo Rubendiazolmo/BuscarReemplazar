@@ -13,5 +13,6 @@ NOTA: Todos los scipts se ejecutan de la misma manera.
   
 [+] BR.vbs: Buscar y reemplaza en nombres del directorio actual. 
             Solo remplaza el nombre del archivo
+
 [+] BRR.vbs: Buscar y reemplaza en nombres del directorio y subdirectorios actuales, de forma recursiva.
              Solo remplaza el nombre del archivo
